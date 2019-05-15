@@ -1,0 +1,55 @@
+.Header {
+  width: 100%;
+  background-color: #2196f3;
+  display: flex;
+  padding: 2rem 1rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+  &__input {
+    margin: auto 10px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      padding-bottom: 10px;
+      color: #fff;
+    }
+
+    input[type="text"] {
+      padding: .5rem .5rem;
+      text-align: center;
+      border-radius: 5px;
+      border: 0;
+      font-size: 1.35rem;
+      transition: box-shadow .2s;
+
+      &:focus,
+      &:active {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
+      }
+
+      &::placeholder {
+        color: #e5e5e5;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__error {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+  }
+}
